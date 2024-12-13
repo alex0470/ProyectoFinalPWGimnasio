@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4d4d4d;
+    background-image: url(https://media.revistagq.com/photos/65b12cd1df908a3c3a4d7373/16:9/w_2560%2Cc_limit/fitness%2520portada.jpg);
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: #ffffff;
+    color: #ffffff;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .logo a {
+    display: inline-block;
+    padding-top: 1px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+  
+  .navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 11px;
+  }
+  
+  .navbar a:hover {
+    color: #ff8120;
+  }
+
+  .usuario {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .usuario:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .menu nav ul {
+    margin-top: 60px;
+    list-style: none;
+    padding: 50px;
+    display: block;
+  }
+
+  .menu nav ul li {
+    margin: 15px 0;
+    display: block;
+  }
+
+  .menu nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .menu nav ul li a:hover {
+    color: #ff8120;
+  }
+  
+  .menu.open {
+    right: 0;
+  }
+
+  .recuperar-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    height: 250px;
+    width: 500px;
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    fill: none;
+    background-color: #fff;
+    stroke: indianred;
+    stroke-width: 2;
+    border: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.x:hover {
+    background-color: #ffe6e6;
+}
+
+p{
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    font-style: normal;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.tabs {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: #f3f3f9;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.tab {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    background-color: #e3a922;
+    color: #000000;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    text-align: left;
+    margin: 0.5rem 0 0.2rem;
+    font-size: 0.9rem;
+}
+
+.login-form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #e3a922;
+}
+
+.recup-button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #e3a922;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recup-button:hover {
+    background-color: #ffe600;
+}
+
+.extra-actions {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.extra-actions a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.extra-actions a:hover {
+    text-decoration: underline;
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  color: #757575;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  padding: 30px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.container p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.regisFrm input[type="text"], .regisFrm input[type="email"], .regisFrm input[type="password"] {
+  width: 94.5%;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  color: #000;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.send-button {
+  text-align: center;
+  margin-top: 20px;
+}
+.send-button input[type="submit"] {
+  padding: 10px 0;
+  width: 60%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #FFF;
+  background-color: #2196F3;
+  cursor: pointer;
+}
+.send-button input[type="submit"]:hover {
+  background-color: #055d54;
+}
+a.logout{float: right;}
+p.success{color:#34A853;}
+p.error{color:#EA4335;}

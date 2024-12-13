@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: #ffffff;
+    color: #ffffff;
+    width: 100%;
+  }
+  
+  .logo {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .logo a {
+    display: inline-block;
+    padding-top: 1px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+  
+  .navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 11px;
+  }
+  
+  .navbar a:hover {
+    color: #ff8120;
+  }
+
+  .usuario {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .usuario:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 9999;
+}
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .menu nav ul {
+    margin-top: 60px;
+    list-style: none;
+    padding: 50px;
+    display: block;
+  }
+
+  .menu nav ul li {
+    margin: 15px 0;
+    display: block;
+  }
+
+  .menu nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .menu nav ul li a:hover {
+    color: #ff8120;
+  }
+  
+  .menu.open {
+    right: 0;
+  }
+  
+    .usuario-nombre{
+    color: #000000;
+  }
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+    display: flex;
+}
+
+h1 {
+    text-align: left;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 25px;
+    margin-left: 50px;
+    text-align: right;
+}
+
+.plan-options {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-option {
+    margin-bottom: 15px;
+    padding: auto;
+    width: 300px;
+    height: 100px;
+    background-color: #ffff;
+    border-radius: 5px;
+    border: 1px, solid, #000000;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.plan-option::selection{
+  margin-bottom: 15px;
+  padding: auto;
+  width: 300px;
+  height: 100px;
+  background-color: #646464;
+  border-radius: 5px;
+  border: 1px, solid, #000000;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+    margin: 45px;
+}
+
+.confirmar {
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.confirmar:hover {
+    background-color: #ffaa00;
+}
+
+#payment-form {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+#payment-form form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+#payment-form form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#payment-form form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#payment-form form button:hover {
+  background-color: #ff8120 ;
+}
